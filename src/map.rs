@@ -75,11 +75,11 @@ impl Map {
         match self.map.orientation {
             tiled::Orientation::Orthogonal => {
                 let center = Map::project_ortho(map_center, tile_size.x(), tile_size.y());
-                Translation::new(origin.x() - center.x() * 4.0, origin.y() - center.y() * 4.0, origin.z())
+                Translation::new(origin.x() - center.x() * 1.0, origin.y() - center.y() * 1.0, origin.z())
             }
             tiled::Orientation::Isometric => {
                 let center = Map::project_iso(map_center, tile_size.x(), tile_size.y());
-                Translation::new(origin.x() - center.x() * 4.0, origin.y()  -center.y() * 4.0, origin.z())
+                Translation::new(origin.x() - center.x() * 1.0, origin.y()  -center.y() * 1.0, origin.z())
             }
 
             _ => panic!("Unsupported orientation {:?}", self.map.orientation),
