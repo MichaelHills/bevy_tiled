@@ -137,7 +137,7 @@ version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5f36b150daa7006ccdaf896d9671a2b3630a2a9aa2c13174acf6493530efc3a3"
 dependencies = [
- "cmake 0.1.44",
+ "cmake",
  "tempfile",
 ]
 
@@ -620,13 +620,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4344512281c643ae7638bbabc3af17a11307803ec8f0fcad9fae512a8bf36467"
 dependencies = [
  "bitflags",
-]
-
-[[package]]
-name = "cmake"
-version = "0.1.43"
-dependencies = [
- "cc",
 ]
 
 [[package]]
@@ -2020,6 +2013,8 @@ dependencies = [
 [[package]]
 name = "shaderc"
 version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ed344938df2d7fa3cc6bfb4af0b578f00f9b389d5fe7be0250fa657c442a8281"
 dependencies = [
  "libc",
  "shaderc-sys",
@@ -2028,8 +2023,10 @@ dependencies = [
 [[package]]
 name = "shaderc-sys"
 version = "0.6.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "30075c712b08798cb2b5e54e4434970a4a3a3a3e838b0642590c74605d3cc528"
 dependencies = [
- "cmake 0.1.43",
+ "cmake",
  "libc",
 ]
 
