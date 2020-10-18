@@ -10,5 +10,5 @@ edition = "2018"
 anyhow = "1.0"
 bevy = { path = "../bevy" }
 glam = "0.9"
-tiled = "0.9"
+tiled = "=0.9.2"
 # tiled = { git = "https://github.com/mattyhall/rs-tiled" }
